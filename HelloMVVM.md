@@ -12,6 +12,11 @@
 
 ---
 ![](Resource/pic-room-messy.JPG)
+#ViewController
+^ so many things to do in one controller
+
+---
+![](Resource/pic-room-messy.JPG)
 
 - Persistance Manager
 - API
@@ -20,6 +25,8 @@
 - State
 - Autolayout
 - Analytics
+
+^ thats mvc come on with masive view controller
 
 ---
 > Massive View Controller
@@ -30,7 +37,7 @@
 ---
 # [FIT]BUGS
 
-^ why : Because each time we adding code controller we also at potential bug. and if one viewcontroller has so many responsibility, and it getting worse if we put more state, because the side effect, and also we cannot test it
+^ why : Because each time we adding code to controller we also add potential bug. and thats if viewcontroller has so many responsibility, and it getting worse if we put more state, because the side effect, and also we cannot test it
 
 ---
 
@@ -53,11 +60,11 @@
 #HOW?
 
 ---
-###DESIGN PATTERN
-#### [FIT]Datasource
-#### [FIT]Standard Composition
-#### [FIT]Smarter Views
-#### [FIT]Coordinator
+##DESIGN PATTERN
+##### [FIT]Datasource
+##### [FIT]Standard Composition
+##### [FIT]Smarter Views
+##### [FIT]Coordinator
 # *MVVM*
 
 ---
@@ -82,6 +89,9 @@
 
 ###View (own) > ViewModel
 ###ViewModel (own) > Model
+
+---
+####[fit]*View* >own> *ViewModel* >own> *Model*
 
 ---
 #Model 
@@ -214,12 +224,15 @@ extension PostDetailViewModel {
 ^ if you need to change the view position only changed in view
 ^ if you need to change the model with same view, then you need changed only in model and viewModel layer
 ^ reduce conflict if you work together, because the responsibility also separate between logic
+^ if you want to make a/b testing, you can create 2 view with same viewmodel, because its the same view but
 
 ---
 #[fit]~~many responsibility, hard to test~~
 ###[fit]ViewController - *View, Layout, animation*
 ###[fit]ViewModel - *Network, Logic, persistence*
 
+---
+![inline 130%](Resource/mvvm&mvc.png)
 
 ---
 
