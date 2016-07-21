@@ -5,7 +5,7 @@
 ---
 
 #Resource
-###github.com/dennisfarandy/hello-MVVM
+###https://github.com/dennisfarandy/Hello-MVVM
 
 ---
 ![](Resource/pic-room-messy.JPG)
